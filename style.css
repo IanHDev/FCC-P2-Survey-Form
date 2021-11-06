@@ -1,1 +1,7 @@
-style test
+body {
+  color: blue;
+}
+
+.name {
+  onfocus="this.value=''"
+}

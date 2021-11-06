@@ -6,10 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Travel Survey Form</title>
-  <meta name="description" content="A simple HTML5 Template for new projects.">
+  <meta name="description" content="A travel survey form">
   <meta name="IHDev" content="IHDev">
 
-  <link rel="stylesheet" href="css/style.css?v=1.0">
+  <link rel="stylesheet" href="style.css?v=1.0">
 
 </head>
 
@@ -24,22 +24,22 @@
   <form id="survey-form">
 
     <label for="name" id="name-label">First name:</label>
-    <input id="name" type="text" name="name" value="Enter your name">
+    <input id="name" type="text" onfocus="this.value=''" name="name" value="Enter your name">
     <!-- Make so the text is shaded and is auto removed when typing. Same for the email field -->
     
     <label for="email" id="name-label"> Email Address:</label>
-    <input id="email" type="email" name="email" value="Enter Your Email">
+    <input id="email" type="email" onfocus="this.value=''" name="email" value="Enter Your Email">
 
     <label for="weeks" id="number-label"> Number of weeks (betweek 1 and 5) for travel:</label>
     <input type="number" id="number" name="weeks" min="1" max="5">
 
     <label for="weather" id="weather-label">What kind of weather do you enjoy?</label>
     <select name="weather" id="dropdown">
+      <option value="select" selected>Select</option>
       <option value="sunny">Sunny</option>
       <option value="rainy">Rainy</option>
       <option value="snowy">Snowy</option>
     </select>
-<!-- Create a default blank dropdown field -->
     <p>What is your group size?</p>
 
     <input type="radio" id="group-size" name="group-size" value="1">
@@ -58,6 +58,24 @@
     <label for="group-size">5+</label>
    <!-- I may need to change the above ids to class. An id might only be used once. Not sure at the moment -->
 
+    <p>What type of hobbies are you interested in? (Check all that apply)</p>
+    <input type="checkbox" id="hobby1" name="hobby1" value="photography">
+    <label for="hobby1">Photography</label>
+
+    <input type="checkbox" id="hobby2" name="hobby2" value="culinary">
+    <label for="hobby2">Culinary</label>
+
+    <input type="checkbox" id="hobby3" name="hobby3" value="birdwatching">
+    <label for="hobby3">Birdwatching</label>
+
+    <input type="checkbox" id="hobby4" name="hobby4" value="hiking">
+    <label for="hobby4">Hiking</label>
+    
+
+  <label for="textarea">Any comments or suggestions?</label>
+  <textarea id="textfield" name="textarea" rows="4" cols="50" onfocus="this.value=''">Input your comments here...</textarea>
+
+  <input type="submit" id="submit" value="submit"> 
 
   </form>
 
