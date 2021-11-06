@@ -23,11 +23,41 @@
 
   <form id="survey-form">
 
-    <label for="name">First name:</label></br>
+    <label for="name" id="name-label">First name:</label>
     <input id="name" type="text" name="name" value="Enter your name">
+    <!-- Make so the text is shaded and is auto removed when typing. Same for the email field -->
     
-    <label for="email"> Email Address:</label></br>
+    <label for="email" id="name-label"> Email Address:</label>
     <input id="email" type="email" name="email" value="Enter Your Email">
+
+    <label for="weeks" id="number-label"> Number of weeks (betweek 1 and 5) for travel:</label>
+    <input type="number" id="number" name="weeks" min="1" max="5">
+
+    <label for="weather" id="weather-label">What kind of weather do you enjoy?</label>
+    <select name="weather" id="dropdown">
+      <option value="sunny">Sunny</option>
+      <option value="rainy">Rainy</option>
+      <option value="snowy">Snowy</option>
+    </select>
+<!-- Create a default blank dropdown field -->
+    <p>What is your group size?</p>
+
+    <input type="radio" id="group-size" name="group-size" value="1">
+    <label for="group-size">1</label>
+
+    <input type="radio" id="group-size" name="group-size" value="2">
+    <label for="group-size">2</label>
+
+    <input type="radio" id="group-size" name="group-size" value="3">
+    <label for="group-size">3</label>
+
+    <input type="radio" id="group-size" name="group-size" value="4">
+    <label for="group-size">4</label>
+
+    <input type="radio" id="group-size" name="group-size" value="5">
+    <label for="group-size">5+</label>
+   <!-- I may need to change the above ids to class. An id might only be used once. Not sure at the moment -->
+
 
   </form>
 
