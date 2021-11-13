@@ -1,5 +1,18 @@
 body {
-  color: blue;
+  
+  /* 
+  background-position: center;
+  background-size: contain; */
+  background-image: src="img/background_img.jpg";
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  /* border: 1px solid #666;
+  height: 10em; */
+  height: 100%;
+  margin: 0;
+  
 }
 
 /* .name {
