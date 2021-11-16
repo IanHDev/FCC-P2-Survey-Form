@@ -1,7 +1,6 @@
 
 html {
-  margin: 0;
-  padding: 0;
+
 background-color: red;
 }
 
@@ -11,15 +10,41 @@ background-color: red;
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
-  height: auto; */
+  height: auto; 
+  min-width: initial;
+  margin: 0; */
   min-height: 100vh;
   width: 100%;
-  /* min-width: initial;
-  margin: 0; */
-  position: absolute;
+  position: fixed;
+  top: 0;
+  left: 0;
   z-index: -1;
   object-fit: cover;
- 
+}
+
+#title {
+   background-color: rgb(219, 135, 24);
+  width: 100%;
+  top: 0;
+  left: 0;
+position: fixed;
+  text-align: center;
+}
+
+#survey-form {
+  top:100px;
+width: 60vw;
+min-width: 650px;
+margin-left: auto;
+margin-right:auto;
+background-color: rgb(219, 135, 24);
+border: 8px solid black;
+border-radius: 1%;
+padding: 30px;
+
+
+
+
 }
 
 /* .name {
