@@ -15,77 +15,99 @@
 
 <body>
  
-  <img id="background-image" src="img/background-image.jpg" alt="Background image map">
+  <img id="background-image" src="img/background-img.png" alt="Background image map">
 
-  <div id="main-content">
+ 
 
   <header id="title">
 
     <h1>Vacation Interest Survey Form</h1>
-    <p id="description">
-      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati site deleniti placeat quam reprehenderit totam ducimus tenetur saepe quis magni earum delectus impedit, cupiditate debitis?
-    </p>
+
   </header>
 
   <form id="survey-form">
 
-    <label for="name" id="name-label">First name:</label>
-    <input id="name" type="text" onfocus="this.value=''" name="name" value="Enter your name">
+    <p id="description">
+      Thank you for taking the time to fill out this form. Complete the following fields so we can better suit your vacations needs.
+    </p>
+
+    <label for="name" class="flex-outer" id="name-label">First name:</label>
+    <input id="name" class="flex-outer" type="text" onfocus="this.value=''" name="name" value="Enter your name">
     <!-- Make so the text is shaded and is auto removed when typing. Same for the email field -->
     
-    <label for="email" id="name-label"> Email Address:</label>
-    <input id="email" type="email" onfocus="this.value=''" name="email" value="Enter Your Email">
+    <label for="email" class="flex-outer" id="email-label"> Email Address:</label>
+    <input id="email" class="flex-outer" type="email" onfocus="this.value=''" name="email" value="Enter Your Email">
 
-    <label for="weeks" id="number-label"> Number of weeks (betweek 1 and 5) for travel:</label>
-    <input type="number" id="number" name="weeks" min="1" max="5">
+    <label for="weeks" class="flex-outer" id="number-label"> Number of weeks (betweek 1 and 5) for travel:</label>
+    <input type="number" class="flex-outer" id="number" name="weeks" min="1" max="5">
 
-    <label for="weather" id="weather-label">What kind of weather do you enjoy?</label>
-    <select name="weather" id="dropdown">
+    <label for="weather" class="flex-outer" id="weather-label">What kind of weather do you enjoy?</label>
+    <select name="weather" class="flex-outer" id="dropdown">
       <option value="select" selected>Select</option>
       <option value="sunny">Sunny</option>
       <option value="rainy">Rainy</option>
       <option value="snowy">Snowy</option>
     </select>
-    <p>What is your group size?</p>
+    <p class="flex-outer">What is your group size?</p>
 
+    <div  class="flex-outer">
     <input type="radio" id="group-size" name="group-size" value="1">
     <label for="group-size">1</label>
+    </div>
 
+    <div class="flex-outer">
     <input type="radio" id="group-size" name="group-size" value="2">
     <label for="group-size">2</label>
+    </div>
 
+    <div class="flex-outer">
     <input type="radio" id="group-size" name="group-size" value="3">
     <label for="group-size">3</label>
+    </div>
 
+    <div class="flex-outer">
     <input type="radio" id="group-size" name="group-size" value="4">
     <label for="group-size">4</label>
+    </div>
 
+    <div class="flex-outer">
     <input type="radio" id="group-size" name="group-size" value="5">
     <label for="group-size">5+</label>
+    </div>
    <!-- I may need to change the above ids to class. An id might only be used once. Not sure at the moment -->
 
-    <p>What type of hobbies are you interested in? (Check all that apply)</p>
+    <p class="flex-outer">What type of hobbies are you interested in? (Check all that apply)</p>
+
+    <div class="flex-outer">
     <input type="checkbox" id="hobby1" name="hobby1" value="photography">
     <label for="hobby1">Photography</label>
+    </div>
 
+    <div class="flex-outer">
     <input type="checkbox" id="hobby2" name="hobby2" value="culinary">
     <label for="hobby2">Culinary</label>
+    </div>
 
+    <div class="flex-outer">
     <input type="checkbox" id="hobby3" name="hobby3" value="birdwatching">
     <label for="hobby3">Birdwatching</label>
+    </div>
 
+    <div class="flex-outer">
     <input type="checkbox" id="hobby4" name="hobby4" value="hiking">
     <label for="hobby4">Hiking</label>
-    
+    </div>
 
-  <label for="textarea">Any comments or suggestions?</label>
-  <textarea id="textfield" name="textarea" rows="4" cols="50" onfocus="this.value=''">Input your comments here...</textarea>
+  <label for="textarea" class="flex-outer">Any comments or suggestions?</label>
+  <textarea class="flex-outer" id="textfield" name="textarea" rows="4" cols="50" onfocus="this.value=''">
+    Input your comments here...
+  </textarea>
 
-  <input type="submit" id="submit" value="submit"> 
+  <input type="submit" class="flex-outer" id="submit" value="submit"> 
 
   </form>
 
-  </div>
+
 
 
 

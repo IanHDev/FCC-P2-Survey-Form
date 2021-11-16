@@ -1,6 +1,6 @@
 
 html {
-
+  font-family: Arial, Helvetica, sans-serif;
 background-color: red;
 }
 
@@ -23,27 +23,45 @@ background-color: red;
 }
 
 #title {
-   background-color: rgb(219, 135, 24);
+   /* background-color: rgb(219, 135, 24);
   width: 100%;
   top: 0;
   left: 0;
-position: fixed;
+position: fixed; */
+  text-align: center;
+
+}
+
+h1 {
+  font-size: 5em;
+}
+
+#description {
+  font-size: 1.5em;
+  font-weight: bolder;
   text-align: center;
 }
 
+.flex-outer {
+    display: flex;
+  flex-wrap: wrap;
+  /* align-items: center; */
+  
+}
+
 #survey-form {
-  top:100px;
+
+font-size: 1.2em;
+font-weight: bold;
 width: 60vw;
 min-width: 650px;
 margin-left: auto;
 margin-right:auto;
-background-color: rgb(219, 135, 24);
-border: 8px solid black;
+/* background-color: rgb(219, 135, 24); */
+background-color: #97B1C0;
+border: 2px solid black;
 border-radius: 1%;
 padding: 30px;
-
-
-
 
 }
 
