@@ -58,13 +58,23 @@ h1 {
 
 
 
-/* label > input [type="radio"] {
-  border: 0px;
-  width: 100%;
-  height: 2em;
-  color: red;
 
-} */
+
+input[type="radio"] {
+  height: 30px;
+  width: 30px;
+  /* transform: scale(1.5);
+    -ms-transform: scale(1.5); IE 9
+  -webkit-transform: scale(1.5); Chrome, Safari, Opera */
+  
+}
+
+input[type="checkbox"] {
+
+  height: 30px;
+  width: 30px;
+}
+/* The transform property can also enlarge a radio (or checkbox) button, but it is reported that it also makes it blurry. Height and width are the only OTHER ways to adjust the size without implementing a replacement radio button for 'selected' and 'not-selected' I pulled the information from here: https://stackoverflow.com/questions/4920281/how-to-change-the-size-of-the-radio-button-using-css  */
 
 #survey-form {
 
