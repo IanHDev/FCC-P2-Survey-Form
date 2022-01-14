@@ -1,25 +1,21 @@
 
 html {
   font-family: Arial, Helvetica, sans-serif;
-background-color: red;
+  /* Set primary font for entire page, with 2 backup fonts */
 }
 
 #background-image {
-  /* background-color: #F9F1DA;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
-  height: auto; 
-  min-width: initial;
-  margin: 0; */
   min-height: 100vh;
-  width: 100%;
+   width: 100%;
+  /* Necessary to stretch across entire viewport. Slight stretch in graphics, but neglegible */
   position: fixed;
+  /* Fixed property allows for non-movement, to be removed from flow, and the following properties: */
   top: 0;
   left: 0;
   z-index: -1;
+  /* Ensure the background does not overlap the form div */
   object-fit: cover;
+  /* Min-height must also be used for this background graphic */
 }
 
 #title {
@@ -27,17 +23,13 @@ background-color: red;
   width: 100%;
   top: 0;
   left: 0;
-position: fixed; */
+  position: fixed; */
   text-align: center;
-
 }
-
 
 h1 {
   font-size: 6em;
 }
-
-
 
 #description {
   font-size: 1.5em;
@@ -46,68 +38,54 @@ h1 {
 }
 
 .flex-outer {
-    display: flex;
+  /* I applied the "flex-outer" class to separate elements so that I can use flexbox for each element */
+  display: flex;
   flex-wrap: wrap;
-  /* align-items: center; */
   min-width: 100%;
   margin: 10px;
   font-size: 1.5em;
   line-height: 1.5;
-  /* margin-bottom: 20px; */
 }
-
-
-
-
 
 input[type="radio"] {
   height: 30px;
   width: 30px;
-  /* transform: scale(1.5);
+   /* transform: scale(1.5);
     -ms-transform: scale(1.5); IE 9
   -webkit-transform: scale(1.5); Chrome, Safari, Opera */
-  
 }
 
 input[type="checkbox"] {
-
   height: 30px;
   width: 30px;
 }
 /* The transform property can also enlarge a radio (or checkbox) button, but it is reported that it also makes it blurry. Height and width are the only OTHER ways to adjust the size without implementing a replacement radio button for 'selected' and 'not-selected' I pulled the information from here: https://stackoverflow.com/questions/4920281/how-to-change-the-size-of-the-radio-button-using-css  */
 
 #survey-form {
-
+/* The "flex-outer" flexbox will operate inside this id */
 font-size: 1.2em;
 font-weight: bold;
 width: 50vw;
 min-width: 650px;
 margin-left: auto;
 margin-right:auto;
-/* background-color: rgb(219, 135, 24); */
-background-color: #97B1C0;
+background-color: #5d98bb;
 border: 2px solid black;
 border-radius: 3%;
 padding: 40px;
 opacity: .85;
-
 }
 
 #name, #email, #number, #dropdown {
 margin-bottom: 20px;
+/* Using these ids to create a separation between elements */
 }
 
-input[type="radio"] {
-
+#submit-button {
+  text-align: center;
+  margin-top: 30px;
+  align-items: center;
 }
-
-
-/* .name {
-  onfocus="this.value=''"
-} */
-
-
-/* media query if width is smaller than x resize title font. */
 
 @media (max-width:1000px) {
   h1 {
@@ -116,7 +94,5 @@ input[type="radio"] {
   #description {
     font-size: 1em;
   }
-  /* adding comment to push git upload so sync */
+  /* Media query reduces size of the elements if web page (Viewport) is smaller than 1000px */
 }
-
-/* Should I adjust the color of the form for more pop? */

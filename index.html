@@ -33,7 +33,7 @@
 
     <label for="name" class="flex-outer" id="name-label">First name:</label>
     <input id="name" class="flex-outer" type="text" onfocus="this.value=''" name="name" value="Enter your name" required placeholder="Enter your name">
-    <!-- Make so the text is shaded and is auto removed when typing. Same for the email field -->
+
     
     <label for="email" class="flex-outer" id="email-label"> Email Address:</label>
     <input id="email" class="flex-outer" type="email" onfocus="this.value=''" name="email" value="Enter Your Email" required placeholder="Enter Your Email">
@@ -74,7 +74,6 @@
     <input type="radio" id="group-size" name="group-size" value="5">
     <label for="group-size">Five+</label>
     </div>
-   <!-- I may need to change the above ids to class. An id might only be used once. Not sure at the moment -->
 
     <p class="flex-outer">What type of hobbies are you interested in? (Check all that apply)</p>
 
@@ -103,7 +102,10 @@
     Input your comments here...
   </textarea>
 
-  <input type="submit" class="flex-outer" id="submit" value="submit"> 
+  <p id="submit-button">
+    <!-- Center the submit button text -->
+  <input type="submit" class="flex-outer" id="submit" value="Submit"> 
+  </p>
 
   </form>
 
