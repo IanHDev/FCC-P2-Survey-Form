@@ -61,6 +61,13 @@ input[type="checkbox"] {
 }
 /* The transform property can also enlarge a radio (or checkbox) button, but it is reported that it also makes it blurry. Height and width are the only OTHER ways to adjust the size without implementing a replacement radio button for 'selected' and 'not-selected' I pulled the information from here: https://stackoverflow.com/questions/4920281/how-to-change-the-size-of-the-radio-button-using-css  */
 
+input[type="submit"] {
+  display: block;
+  margin: 0 auto;
+}
+/* Display: block; is necessary for the submit text to be centered on the form.
+  See: https://stackoverflow.com/questions/4221263/center-form-submit-buttons-html-css#:~:text=use%20text%2Dalign%3Acenter%20on,it%20in%20the%20parent%20container. */
+
 #survey-form {
 /* The "flex-outer" flexbox will operate inside this id */
 font-size: 1.2em;
@@ -79,12 +86,6 @@ opacity: .85;
 #name, #email, #number, #dropdown {
 margin-bottom: 20px;
 /* Using these ids to create a separation between elements */
-}
-
-#submit-button {
-  text-align: center;
-  margin-top: 30px;
-  align-items: center;
 }
 
 @media (max-width:1000px) {
